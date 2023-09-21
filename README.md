@@ -26,6 +26,16 @@ package com.myapp;
 import com.ibeacon.simulator.BeaconBroadcastPackage;
 ```
 
+Add in `android/app/src/main/AndroidManifest.xml`
+```
+<application
+ ....
+ ....
+
+ <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver" android:exported="true" />
+</application>
+```
+
 # Setup iOS
 
 Add in your `Podfile`
